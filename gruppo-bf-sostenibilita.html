@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scopri l'impegno del Gruppo BF per la sostenibilità ambientale, sociale ed economica nel settore agricolo italiano">
+    <title>Gruppo BF - Sostenibilità | Best Fields, Best Food</title>
+    <style>
+        /* Design System - Variabili CSS */
+        :root {
+            /* Colori principali - tema naturale sostenibile */
+            --color-primary: #2d7a3e;
+            --color-primary-light: #4a9d5b;
+            --color-primary-dark: #1e5a2d;
+            --color-secondary: #8b6f47;
+            --color-accent: #f4a259;
+            
+            /* Colori neutri */
+            --color-background: #fafaf8;
+            --color-surface: #ffffff;
+            --color-text: #2c3e2e;
+            --color-text-secondary: #5a6f5d;
+            --color-border: rgba(45, 122, 62, 0.15);
+            
+            /* Tipografia */
+            --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            --font-size-base: 16px;
+            --font-size-sm: 14px;
+            --font-size-lg: 18px;
+            --font-size-xl: 24px;
+            --font-size-2xl: 32px;
+            --font-size-3xl: 48px;
+            
+            /* Spaziatura */
+            --space-xs: 8px;
+            --space-sm: 16px;
+            --space-md: 24px;
+            --space-lg: 32px;
+            --space-xl: 48px;
+            --space-2xl: 64px;
+            
+            /* Border radius */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 16px;
+            
+            /* Shadows */
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+            
+            /* Transizioni */
+            --transition: 0.3s ease;
+        }
+        
+        /* Reset e base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            font-size: var(--font-size-base);
+        }
+        
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-background);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Header e navigazione */
+        .header {
+            background: var(--color-surface);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 2px solid var(--color-primary);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--space-sm) var(--space-md);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--space-md);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            text-decoration: none;
+        }
+        
+        .logo-img {
+            height: 50px;
+            width: auto;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-title {
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            color: var(--color-primary);
+            line-height: 1.2;
+        }
+        
+        .logo-subtitle {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+            font-weight: 500;
+        }
+        
+        .nav {
+            display: flex;
+            gap: var(--space-md);
+            list-style: none;
+        }
+        
+        .nav a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 500;
+            padding: var(--space-xs) var(--space-sm);
+            border-radius: var(--radius-sm);
+            transition: all var(--transition);
+        }
+        
+        .nav a:hover,
+        .nav a:focus {
+            background-color: var(--color-primary);
+            color: white;
+            outline: none;
+        }
+        
+        /* Mobile menu button */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary);
+            padding: var(--space-xs) var(--space-sm);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        /* Hero section */
+        .hero {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            color: white;
+            padding: var(--space-2xl) var(--space-md);
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: var(--font-size-3xl);
+            margin-bottom: var(--space-md);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--space-lg);
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--color-primary);
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: var(--radius-lg);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: var(--font-size-lg);
+            transition: all var(--transition);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .cta-button:hover,
+        .cta-button:focus {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            outline: 3px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Container generico */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--space-xl) var(--space-md);
+        }
+        
+        /* Sezioni */
+        .section {
+            margin-bottom: var(--space-2xl);
+        }
+        
+        .section-title {
+            font-size: var(--font-size-2xl);
+            color: var(--color-primary);
+            margin-bottom: var(--space-md);
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        .section-intro {
+            font-size: var(--font-size-lg);
+            color: var(--color-text-secondary);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto var(--space-xl);
+            line-height: 1.7;
+        }
+        
+        /* Card grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-lg);
+            margin-bottom: var(--space-xl);
+        }
+        
+        .card {
+            background: var(--color-surface);
+            padding: var(--space-lg);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            transition: all var(--transition);
+            border: 1px solid var(--color-border);
+        }
+        
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .card-icon {
+            font-size: 48px;
+            margin-bottom: var(--space-sm);
+            display: block;
+        }
+        
+        .card-title {
+            font-size: var(--font-size-xl);
+            color: var(--color-primary);
+            margin-bottom: var(--space-sm);
+            font-weight: 600;
+        }
+        
+        .card-text {
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .card-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .card-list li {
+            padding-left: 24px;
+            position: relative;
+            margin-bottom: var(--space-xs);
+            color: var(--color-text-secondary);
+        }
+        
+        .card-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--color-primary);
+            font-weight: bold;
+        }
+        
+        /* Stats section */
+        .stats {
+            background: var(--color-primary);
+            color: white;
+            padding: var(--space-xl) var(--space-md);
+            border-radius: var(--radius-lg);
+            margin: var(--space-xl) 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-lg);
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            display: block;
+            margin-bottom: var(--space-xs);
+        }
+        
+        .stat-label {
+            font-size: var(--font-size-base);
+            opacity: 0.9;
+        }
+        
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--color-primary);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: var(--space-lg);
+            padding-left: var(--space-lg);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -46px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--color-primary);
+            border: 3px solid var(--color-background);
+        }
+        
+        .timeline-year {
+            font-weight: 700;
+            color: var(--color-primary);
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--space-xs);
+        }
+        
+        .timeline-content {
+            background: var(--color-surface);
+            padding: var(--space-md);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        /* Download section */
+        .download-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9f5ec 100%);
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            text-align: center;
+        }
+        
+        .download-title {
+            font-size: var(--font-size-2xl);
+            color: var(--color-primary);
+            margin-bottom: var(--space-md);
+            font-weight: 700;
+        }
+        
+        .download-button {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            background: var(--color-primary);
+            color: white;
+            padding: var(--space-md) var(--space-lg);
+            border-radius: var(--radius-lg);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: var(--font-size-lg);
+            transition: all var(--transition);
+            box-shadow: var(--shadow-md);
+            margin: var(--space-sm);
+        }
+        
+        .download-button:hover,
+        .download-button:focus {
+            background: var(--color-primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            outline: 3px solid rgba(45, 122, 62, 0.3);
+        }
+        
+        .download-icon {
+            font-size: 24px;
+        }
+        
+        /* Certificazioni grid */
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+        
+        .cert-badge {
+            background: var(--color-surface);
+            padding: var(--space-md);
+            border-radius: var(--radius-md);
+            text-align: center;
+            border: 2px solid var(--color-border);
+            font-weight: 600;
+            color: var(--color-primary);
+            transition: all var(--transition);
+        }
+        
+        .cert-badge:hover {
+            border-color: var(--color-primary);
+            transform: scale(1.05);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--color-primary-dark);
+            color: white;
+            padding: var(--space-xl) var(--space-md);
+            margin-top: var(--space-2xl);
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-lg);
+            list-style: none;
+            margin-bottom: var(--space-md);
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+            transition: opacity var(--transition);
+        }
+        
+        .footer-links a:hover,
+        .footer-links a:focus {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            :root {
+                --font-size-3xl: 36px;
+                --font-size-2xl: 28px;
+                --font-size-xl: 20px;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .nav {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                gap: var(--space-xs);
+            }
+            
+            .nav.active {
+                display: flex;
+            }
+            
+            .menu-toggle {
+                display: block;
+                align-self: flex-end;
+                margin-top: calc(-1 * var(--space-lg));
+            }
+            
+            .hero {
+                padding: var(--space-xl) var(--space-md);
+            }
+            
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline {
+                padding-left: 30px;
+            }
+            
+            .timeline-item {
+                padding-left: var(--space-md);
+            }
+            
+            .timeline-item::before {
+                left: -38px;
+            }
+        }
+        
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        
+        :focus-visible {
+            outline: 3px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <a href="#home" class="logo" aria-label="Gruppo BF - Home">
+                <div class="logo-text">
+                    <span class="logo-title">GRUPPO BF</span>
+                    <span class="logo-subtitle">Best Fields, Best Food</span>
+                </div>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+                Menu
+            </button>
+            
+            <nav role="navigation">
+                <ul class="nav" id="mainNav">
+                    <li><a href="#piano">Piano Strategico</a></li>
+                    <li><a href="#pilastri">Pilastri</a></li>
+                    <li><a href="#risultati">Risultati</a></li>
+                    <li><a href="#certificazioni">Certificazioni</a></li>
+                    <li><a href="#report">Report</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Sostenibilità nel Settore Agricolo</h1>
+            <p>Il Gruppo BF è impegnato nella creazione di un modello di business sostenibile e responsabile che salvaguardi i diritti umani, le capacità rigenerative dei terreni e i bisogni della collettività.</p>
+            <a href="#piano" class="cta-button">Scopri il nostro impegno</a>
+        </div>
+    </section>
+
+    <!-- Piano Strategico -->
+    <section class="container section" id="piano">
+        <h2 class="section-title">Piano Strategico di Sostenibilità 2023-2027</h2>
+        <p class="section-intro">
+            I temi di sostenibilità non sono per il Gruppo BF una visione ideale ma costituiscono la scelta consapevole di un approccio orientato alla creazione di valore che si riflette positivamente anche sui risultati economico-finanziari.
+        </p>
+        
+        <div class="stats">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Priorità Strategiche</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1.220</span>
+                    <span class="stat-label">Ettari per Biodiversità</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4.237</span>
+                    <span class="stat-label">kWp Fotovoltaico</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Certificazioni</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pilastri -->
+    <section class="container section" id="pilastri">
+        <h2 class="section-title">I 5 Pilastri della Sostenibilità</h2>
+        <p class="section-intro">
+            Il nostro Piano di Sostenibilità si concentra su cinque priorità strategiche fondamentali, ciascuna correlata agli Obiettivi di Sviluppo Sostenibile (SDGs) dell'Agenda 2030.
+        </p>
+        
+        <div class="card-grid">
+            <article class="card">
+                <span class="card-icon" aria-hidden="true">🌱</span>
+                <h3 class="card-title">1. Sostenibilità Ambientale</h3>
+                <p class="card-text">
+                    Sviluppo nel rispetto delle risorse naturali attraverso la riduzione delle emissioni di CO₂ e l'utilizzo di energie rinnovabili.
+                </p>
+                <ul class="card-list">
+                    <li>Certificazione ISO 14001 per le società di produzione</li>
+                    <li>Impianti fotovoltaici e di biometano</li>
+                    <li>Lavorazioni minime del terreno (50% superficie)</li>
+                    <li>Utilizzo di variet&agrave; aridoresistenti</li>
+                    <li>Irrigazione di precisione (45% superficie entro 2027)</li>
+                </ul>
+            </article>
+            
+            <article class="card">
+                <span class="card-icon" aria-hidden="true">🦋</span>
+                <h3 class="card-title">2. Biodiversità</h3>
+                <p class="card-text">
+                    Protezione della varietà e variabilità degli organismi viventi e degli ecosistemi.
+                </p>
+                <ul class="card-list">
+                    <li>10% annuale dei terreni dedicati alla biodiversità</li>
+                    <li>1.220 ettari coltivati nel 2023 (erba medica e mix foraggero)</li>
+                    <li>Coltivazione di piante mellifere</li>
+                    <li>Cover crops e tecniche agronomiche conservative</li>
+                    <li>Mappatura impatto biodiversità fornitori</li>
+                </ul>
+            </article>
+            
+            <article class="card">
+                <span class="card-icon" aria-hidden="true">🔍</span>
+                <h3 class="card-title">3. Tracciabilità di Filiera</h3>
+                <p class="card-text">
+                    Rafforzamento della tracciabilità e responsabilità lungo tutta la catena di fornitura.
+                </p>
+                <ul class="card-list">
+                    <li>Codice di Condotta per fornitori rilevanti</li>
+                    <li>Mappatura certificazioni ISO 14001 e ISO 45001</li>
+                    <li>Piano certificazioni qualità e sicurezza alimentare</li>
+                    <li>ISCC EU, IFS, Kosher, Halal</li>
+                    <li>Progressione 20% annua copertura fornitori</li>
+                </ul>
+            </article>
+            
+            <article class="card">
+                <span class="card-icon" aria-hidden="true">👥</span>
+                <h3 class="card-title">4. Capitale Umano</h3>
+                <p class="card-text">
+                    Valorizzazione delle risorse umane attraverso iniziative mirate al benessere e alla crescita professionale.
+                </p>
+                <ul class="card-list">
+                    <li>Analisi del clima aziendale</li>
+                    <li>Eventi di aggregazione e comunicazione</li>
+                    <li>Codice Etico e procedura whistleblowing</li>
+                    <li>Programmi di valutazione performance</li>
+                    <li>Certificazione ISO 45001 (Salute e Sicurezza)</li>
+                </ul>
+            </article>
+            
+            <article class="card">
+                <span class="card-icon" aria-hidden="true">🏘️</span>
+                <h3 class="card-title">5. Comunità e Territorio</h3>
+                <p class="card-text">
+                    Promozione dello sviluppo delle comunità locali e dei territori in cui opera il Gruppo.
+                </p>
+                <ul class="card-list">
+                    <li>Almeno 2 progetti sociali ogni 2 anni</li>
+                    <li>Video Mapping Palazzo dei Diamanti (Ferrara)</li>
+                    <li>Progetti continuit&agrave; scuole primarie-secondarie</li>
+                    <li>Valorizzazione patrimonio artistico locale</li>
+                    <li>Collaborazione con autorità e popolazione</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!-- Agricoltura di Precisione -->
+    <section class="container section">
+        <h2 class="section-title">Transizione all'Agroecologia</h2>
+        <p class="section-intro">
+            Il Gruppo BF promuove pratiche agricole sostenibili che integrano le esigenze di produzione con la salvaguardia dell'ambiente.
+        </p>
+        
+        <div class="card-grid">
+            <article class="card">
+                <h3 class="card-title">Lavorazioni Conservative</h3>
+                <p class="card-text">
+                    Riduzione dell'intensità della lavorazione del terreno attraverso vertical tillage, strip tillage e minimum tillage per diminuire il consumo di gasolio e favorire l'assorbimento dell'acqua.
+                </p>
+            </article>
+            
+            <article class="card">
+                <h3 class="card-title">Varietà Aridoresistenti</h3>
+                <p class="card-text">
+                    Utilizzo di varietà selezionate per la capacità di sopravvivere in condizioni di stress idrico, ottimizzando l'uso delle risorse idriche disponibili.
+                </p>
+            </article>
+            
+            <article class="card">
+                <h3 class="card-title">Irrigazione di Precisione</h3>
+                <p class="card-text">
+                    Applicazione di modelli di gestione irrigua avanzati con sistemi satellitari e dati agrometeorologici per controllare il 45% della superficie con irrigazione a goccia.
+                </p>
+            </article>
+            
+            <article class="card">
+                <h3 class="card-title">Prodotti Organici</h3>
+                <p class="card-text">
+                    Utilizzo di biostimolanti per indurre resistenze verso i patogeni su circa il 35% della superficie totale coltivata entro il 2027.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Risultati -->
+    <section class="container section" id="risultati">
+        <h2 class="section-title">Risultati e Performance 2023</h2>
+        <p class="section-intro">
+            I progressi concreti realizzati nel primo anno di implementazione del Piano Strategico di Sostenibilità.
+        </p>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">Energia Rinnovabile</div>
+                <div class="timeline-content">
+                    <strong>4.237 kWp di impianti fotovoltaici installati</strong> in grado di coprire il 77% del fabbisogno energetico. Nuovi impianti presso le stalle di Jolanda di Savoia e sede centrale SIS. Obiettivo 2024: raggiungere il 100% del fabbisogno.
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">Biodiversità</div>
+                <div class="timeline-content">
+                    <strong>1.220 ettari dedicati a iniziative di biodiversità</strong>, superando l'obiettivo del 10%. 820 ettari destinati a erba medica, 400 ettari a mix foraggero, 10 ettari a piante mellifere.
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">Certificazioni Qualità</div>
+                <div class="timeline-content">
+                    <strong>Ottenute nuove certificazioni:</strong> ISCC EU per BF Agricola e BF Agro-Industriale, Kosher e IFS per BF Agro-Industriale, Coeliac UK per BIA, ISO 22005 per CAI.
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">Codice di Condotta</div>
+                <div class="timeline-content">
+                    <strong>74% dei fornitori rilevanti</strong> ha adottato il Codice di Condotta (37 su 50), promuovendo pratiche sostenibili lungo la catena di fornitura.
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">Sicurezza sul Lavoro</div>
+                <div class="timeline-content">
+                    <strong>Certificazione ISO 45001</strong> confermata per BF Agricola e Bonifiche Ferraresi. Implementata procedura whistleblowing in 12 società del Gruppo.
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">Progetti Territoriali</div>
+                <div class="timeline-content">
+                    <strong>Video Mapping Palazzo dei Diamanti</strong> a Ferrara e <strong>progetti di continuità scolastica</strong> nella provincia di Ferrara, coinvolgendo scuole primarie e secondarie.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificazioni -->
+    <section class="container section" id="certificazioni">
+        <h2 class="section-title">Certificazioni e Standard</h2>
+        <p class="section-intro">
+            Il Gruppo BF mantiene elevati standard di qualità, sicurezza e sostenibilità attraverso numerose certificazioni internazionali.
+        </p>
+        
+        <div class="cert-grid">
+            <div class="cert-badge">ISO 14001<br><small>Gestione Ambientale</small></div>
+            <div class="cert-badge">ISO 45001<br><small>Salute e Sicurezza</small></div>
+            <div class="cert-badge">ISO 50001<br><small>Gestione Energia</small></div>
+            <div class="cert-badge">ISO 22005<br><small>Tracciabilità Filiera</small></div>
+            <div class="cert-badge">ISCC EU<br><small>Sostenibilità Carbon</small></div>
+            <div class="cert-badge">IFS<br><small>Food Standard</small></div>
+            <div class="cert-badge">Global GAP<br><small>Good Agricultural Practice</small></div>
+            <div class="cert-badge">KOSHER<br><small>Alimentazione Ebraica</small></div>
+            <div class="cert-badge">HALAL<br><small>Alimentazione Islamica</small></div>
+            <div class="cert-badge">VEGANOK<br><small>Standard Vegan</small></div>
+            <div class="cert-badge">Coeliac UK<br><small>Prodotti Celiaci</small></div>
+            <div class="cert-badge">KAT Feed<br><small>Mangimi Certificati</small></div>
+        </div>
+    </section>
+
+    <!-- Download Report -->
+    <section class="container section" id="report">
+        <div class="download-section">
+            <h2 class="download-title">Scarica il Report di Sostenibilità</h2>
+            <p style="font-size: var(--font-size-lg); color: var(--color-text-secondary); margin-bottom: var(--space-lg);">
+                Approfondisci il nostro impegno per la sostenibilità consultando la Dichiarazione Non Finanziaria 2023 completa.
+            </p>
+            
+            <a href="9.gruppobfdnf2023.30.04.24v.definitiva.pdf" 
+               class="download-button" 
+               download
+               aria-label="Scarica Report Sostenibilità 2023 PDF">
+                <span class="download-icon" aria-hidden="true">📥</span>
+                <span>Report Sostenibilità 2023</span>
+            </a>
+            
+            <p style="margin-top: var(--space-md); font-size: var(--font-size-sm); color: var(--color-text-secondary);">
+                Formato PDF | 2,5 MB | Dichiarazione Non Finanziaria 2023
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <p style="font-size: var(--font-size-xl); font-weight: 700; margin-bottom: var(--space-sm);">
+                GRUPPO BF SpA
+            </p>
+            <p style="margin-bottom: var(--space-md); opacity: 0.9;">
+                Best Fields, Best Food - Sostenibilità nel settore agricolo
+            </p>
+            
+            <ul class="footer-links">
+                <li><a href="https://www.bfspa.it" target="_blank" rel="noopener noreferrer">Sito Ufficiale</a></li>
+                <li><a href="https://www.bfspa.it/investor-relations" target="_blank" rel="noopener noreferrer">Investor Relations</a></li>
+                <li><a href="https://www.bfagricola.it" target="_blank" rel="noopener noreferrer">BF Agricola</a></li>
+                <li><a href="https://www.consorziagrariditalia.it" target="_blank" rel="noopener noreferrer">Consorzi Agrari d'Italia</a></li>
+            </ul>
+            
+            <p style="margin-top: var(--space-lg); font-size: var(--font-size-sm); opacity: 0.8;">
+                &copy; 2024 Gruppo BF SpA - Tutti i diritti riservati
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle menu mobile
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('active');
+        }
+        
+        // Smooth scroll per i link interni
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Chiudi menu mobile dopo il click
+                    const nav = document.getElementById('mainNav');
+                    nav.classList.remove('active');
+                }
+            });
+        });
+        
+        // Evidenzia sezione attiva nella navigazione
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav a[href^="#"]');
+        
+        function highlightNav() {
+            let scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.style.backgroundColor = '';
+                        link.style.color = '';
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.style.backgroundColor = 'var(--color-primary)';
+                            link.style.color = 'white';
+                        }
+                    });
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', highlightNav);
+        
+        // Animazione fadeIn per le cards quando entrano nel viewport
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '0';
+                    entry.target.style.transform = 'translateY(20px)';
+                    entry.target.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, 100);
+                    
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.card, .timeline-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
