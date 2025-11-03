@@ -4,7 +4,7 @@ Pagina web informativa sull'impegno del Gruppo BF SpA per la sostenibilità ambi
 
 ## 📋 Descrizione Progetto
 
-Questo progetto è stato sviluppato come parte di un lavoro universitario per presentare le principali attività di sostenibilità del Gruppo BF, azienda leader nel settore primario agricolo italiano.
+Questo progetto è stato sviluppato come Project Work per per presentare le principali attività di sostenibilità del Gruppo BF, azienda leader nel settore primario agricolo italiano.
 
 La pagina web fornisce:
 - Panoramica del Piano Strategico di Sostenibilità 2023-2027
@@ -13,7 +13,7 @@ La pagina web fornisce:
 - Certificazioni e standard di qualità
 - Download del report di sostenibilità completo
 
-## 🌱 Contenuti Principali
+##  Contenuti Principali
 
 ### I 5 Pilastri della Sostenibilità BF:
 
@@ -29,7 +29,7 @@ La pagina web fornisce:
 - 30+ certificazioni internazionali (ISO 14001, ISO 45001, IFS, ISCC EU, ecc.)
 - 74% dei fornitori rilevanti ha adottato il Codice di Condotta
 
-## 🚀 Come Usare il Progetto
+##  Come Usare il Progetto
 
 ### Visualizzazione Locale
 
@@ -79,7 +79,7 @@ La pagina web fornisce:
    - Per avere un URL più pulito, rinomina il file in `index.html`
    - Il sito sarà accessibile direttamente a `https://[tuo-username].github.io/gruppo-bf-sostenibilita/`
 
-## 📁 Struttura File
+##  Struttura File
 
 ```
 gruppo-bf-sostenibilita/
@@ -90,7 +90,7 @@ gruppo-bf-sostenibilita/
 └── .gitignore                      # File da ignorare (opzionale)
 ```
 
-## 📄 Report di Sostenibilità
+##  Report di Sostenibilità
 
 Il report completo `9.gruppobfdnf2023.30.04.24v.definitiva.pdf` deve essere caricato nella stessa cartella del file HTML per permettere il download dalla pagina web.
 
@@ -99,7 +99,7 @@ Il report completo `9.gruppobfdnf2023.30.04.24v.definitiva.pdf` deve essere cari
 2. Carica il PDF su un servizio cloud (Google Drive, Dropbox) e aggiorna il link nella pagina
 3. Comprimi il PDF mantenendo una qualità accettabile
 
-## 🎨 Caratteristiche Tecniche
+##  Caratteristiche Tecniche
 
 ### Design e Accessibilità
 - **Responsive Design** - Ottimizzato per desktop, tablet e mobile
@@ -114,10 +114,10 @@ Il report completo `9.gruppobfdnf2023.30.04.24v.definitiva.pdf` deve essere cari
 - Font system nativi (nessun font esterno)
 
 ### Compatibilità Browser
-- ✅ Chrome/Edge (versioni recenti)
-- ✅ Firefox (versioni recenti)
-- ✅ Safari (versioni recenti)
-- ✅ Mobile browsers (iOS Safari, Chrome Mobile)
+-  Chrome/Edge (versioni recenti)
+-  Firefox (versioni recenti)
+-  Safari (versioni recenti)
+-  Mobile browsers (iOS Safari, Chrome Mobile)
 
 ## 🔧 Personalizzazione
 
@@ -145,7 +145,7 @@ Sostituisci il file PDF e aggiorna il nome nel link:
 <a href="NOME_NUOVO_REPORT.pdf" class="download-button" download>
 ```
 
-## 📱 Sezioni della Pagina
+##  Sezioni della Pagina
 
 1. **Header** - Logo, navigazione, menu mobile
 2. **Hero** - Introduzione e call-to-action
@@ -157,7 +157,7 @@ Sostituisci il file PDF e aggiorna il nome nel link:
 8. **Download Report** - Sezione download PDF
 9. **Footer** - Link e informazioni aziendali
 
-## ✨ Funzionalità Interactive
+##  Funzionalità Interactive
 
 - **Smooth Scroll** - Navigazione fluida tra sezioni
 - **Menu Mobile** - Responsive navigation per smartphone
@@ -165,7 +165,7 @@ Sostituisci il file PDF e aggiorna il nome nel link:
 - **Card Animations** - Fade-in animazioni on scroll
 - **Hover Effects** - Feedback visivi su pulsanti e card
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Il PDF non si scarica
 - Verifica che il file PDF sia nella stessa cartella dell'HTML
@@ -183,16 +183,16 @@ Sostituisci il file PDF e aggiorna il nome nel link:
 - Apri la console sviluppatore (F12) per vedere errori
 - Prova un hard refresh (Ctrl+F5 o Cmd+Shift+R)
 
-## 📚 Risorse Utili
+##  Risorse Utili
 
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
 - [Markdown Guide](https://www.markdownguide.org/)
 - [HTML Semantico](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html)
 - [WCAG Accessibilità](https://www.w3.org/WAI/WCAG21/quickref/)
 
-## 👨‍💻 Autore
-
-Progetto sviluppato per corso universitario - Analisi Sostenibilità Aziendale
+##  Autore
+CArmelo Emanuele Sgro'
+Progetto sviluppato per Project Work universitario - Analisi Sostenibilità Aziendale
 
 **Azienda Analizzata:** Gruppo BF SpA  
 **Settore:** Primario - Agricoltura e Agroindustria  
