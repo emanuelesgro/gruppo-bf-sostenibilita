@@ -41,7 +41,7 @@ La pagina web fornisce:
 
 2. **Apri il file HTML:**
    - Doppio click su `gruppo-bf-sostenibilita.html`
-   - Oppure apri con il tuo browser preferito
+   - Oppure apri con il browser 
 
 3. **Nessun server necessario:**
    - Il progetto è completamente statico
@@ -49,35 +49,10 @@ La pagina web fornisce:
 
 ### Deploy su GitHub Pages
 
-1. **Crea un nuovo repository su GitHub**
-   - Vai su https://github.com/new
-   - Nomina il repository (es. `gruppo-bf-sostenibilita`)
-   - Imposta come Public
+1. **Accedi al sito:**
+   [- il sito e' disponibile a:
+   - `https://[tuo-username].github.io/gruppo-bf-sostenibilita/`](https://emanuelesgro.github.io/gruppo-bf-sostenibilita/gruppo-bf-sostenibilita.html)
 
-2. **Carica i file:**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: Progetto sostenibilità Gruppo BF"
-   git branch -M main
-   git remote add origin https://github.com/[tuo-username]/gruppo-bf-sostenibilita.git
-   git push -u origin main
-   ```
-
-3. **Attiva GitHub Pages:**
-   - Vai nelle Settings del repository
-   - Sezione "Pages" nel menu laterale
-   - Sotto "Source" seleziona "main" branch
-   - Cartella: `/ (root)`
-   - Clicca "Save"
-
-4. **Accedi al sito:**
-   - Dopo alcuni minuti, il sito sarà disponibile a:
-   - `https://[tuo-username].github.io/gruppo-bf-sostenibilita/`
-
-5. **Rinomina il file HTML (opzionale):**
-   - Per avere un URL più pulito, rinomina il file in `index.html`
-   - Il sito sarà accessibile direttamente a `https://[tuo-username].github.io/gruppo-bf-sostenibilita/`
 
 ##  Struttura File
 
@@ -92,19 +67,15 @@ gruppo-bf-sostenibilita/
 
 ##  Report di Sostenibilità
 
-Il report completo `9.gruppobfdnf2023.30.04.24v.definitiva.pdf` deve essere caricato nella stessa cartella del file HTML per permettere il download dalla pagina web.
+Il report completo `9.gruppobfdnf2023.30.04.24v.definitiva.pdf` e' caricato nella stessa cartella del file HTML per permettere il download dalla pagina web.
 
-**Importante:** Se il file PDF è troppo grande per GitHub (> 100 MB), considera queste alternative:
-1. Usa Git LFS (Large File Storage)
-2. Carica il PDF su un servizio cloud (Google Drive, Dropbox) e aggiorna il link nella pagina
-3. Comprimi il PDF mantenendo una qualità accettabile
 
 ##  Caratteristiche Tecniche
 
 ### Design e Accessibilità
 - **Responsive Design** - Ottimizzato per desktop, tablet e mobile
 - **Accessibilità WCAG** - Supporto screen reader, navigazione keyboard, contrasti adeguati
-- **Temi Naturali** - Palette colori ispirata alla sostenibilità (verdi, marroni, toni naturali)
+- **Temi Naturali** - Palette colori ispirata alla sostenibilità (verdi, toni naturali)
 - **Performance** - Nessuna dipendenza esterna, caricamento rapido
 
 ### Tecnologie Utilizzate
@@ -114,10 +85,10 @@ Il report completo `9.gruppobfdnf2023.30.04.24v.definitiva.pdf` deve essere cari
 - Font system nativi (nessun font esterno)
 
 ### Compatibilità Browser
--  Chrome/Edge (versioni recenti)
--  Firefox (versioni recenti)
--  Safari (versioni recenti)
--  Mobile browsers (iOS Safari, Chrome Mobile)
+-  Chrome/Edge 
+-  Firefox 
+-  Safari 
+-  Mobile browsers 
 
 ## 🔧 Personalizzazione
 
@@ -191,7 +162,7 @@ Sostituisci il file PDF e aggiorna il nome nel link:
 - [WCAG Accessibilità](https://www.w3.org/WAI/WCAG21/quickref/)
 
 ##  Autore
-CArmelo Emanuele Sgro'
+Carmelo Emanuele Sgro'
 Progetto sviluppato per Project Work universitario - Analisi Sostenibilità Aziendale
 
 **Azienda Analizzata:** Gruppo BF SpA  
