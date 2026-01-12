@@ -1,189 +1,135 @@
-# Gruppo BF - Progetto Sostenibilità
+# Sostenibilità Gruppo BF SpA - Progetto Universitario
 
-Pagina web informativa sull'impegno del Gruppo BF SpA per la sostenibilità ambientale, sociale ed economica nel settore agricolo italiano.
+## Descrizione
 
-## 📋 Descrizione Progetto
+Progetto universitario che presenta il Piano Strategico 2023-2027 del Gruppo BF SpA attraverso una pagina web interattiva. Il sito illustra le principali iniziative di sostenibilità ambientale, biodiversità, tracciabilità e responsabilità sociale dell'azienda agricola.
 
-Questo progetto è stato sviluppato come Project Work per per presentare le principali attività di sostenibilità del Gruppo BF, azienda leader nel settore primario agricolo italiano.
+## Contenuti
 
-La pagina web fornisce:
-- Panoramica del Piano Strategico di Sostenibilità 2023-2027
-- I 5 pilastri strategici della sostenibilità
-- Risultati concreti raggiunti nel 2023
-- Certificazioni e standard di qualità
-- Download del report di sostenibilità completo
+La pagina web è organizzata in sezioni che coprono i seguenti argomenti:
 
-##  Contenuti Principali
+- **Introduzione**: Presentazione del Gruppo BF SpA con dati chiave (4.237 kWp di fotovoltaico, 1.220 ettari coltivati, 30+ certificazioni)
+- **I 5 Pilastri Strategici**: Sostenibilità ambientale, biodiversità, tracciabilità, capitale umano e comunità
+- **Risultati 2023**: Timeline dei principali risultati raggiunti durante l'anno
+- **Certificazioni**: Elenco delle certificazioni ISO e internazionali possedute
+- **Download**: Link per scaricare la Dichiarazione Non Finanziaria 2023 completa in PDF
 
-### I 5 Pilastri della Sostenibilità BF:
+## Tecnologie Utilizzate
 
-1. **Sostenibilità Ambientale** - Riduzione emissioni CO₂, energie rinnovabili, agricoltura di precisione
-2. **Biodiversità** - Protezione ecosistemi, 10% terreni dedicati alla biodiversità
-3. **Tracciabilità di Filiera** - Certificazioni qualità, codice condotta fornitori
-4. **Capitale Umano** - Valorizzazione risorse umane, formazione, sicurezza
-5. **Comunità e Territorio** - Progetti sociali, valorizzazione patrimonio locale
+- HTML5 per la struttura semantica
+- CSS3 per lo stile e il layout responsivo
+- JavaScript vanilla per l'interattività
+- Google Fonts per la tipografia
 
-### Dati Chiave 2023:
-- 1.220 ettari dedicati a iniziative di biodiversità
-- 4.237 kWp di impianti fotovoltaici installati
-- 30+ certificazioni internazionali (ISO 14001, ISO 45001, IFS, ISCC EU, ecc.)
-- 74% dei fornitori rilevanti ha adottato il Codice di Condotta
+## Funzionalità
 
-##  Come Usare il Progetto
+- Design responsive che si adatta a desktop, tablet e mobile
+- Menu di navigazione con scroll fluido verso le sezioni
+- Grid layout per le card dei pilastri strategici
+- Download diretto del PDF del report
+- Palette di colori che riflette l'impegno ambientale dell'azienda (verde, tonalità naturali)
 
-### Visualizzazione Locale
+## Struttura File
 
-1. **Clona il repository:**
-   ```bash
-   git clone https://github.com/[tuo-username]/gruppo-bf-sostenibilita.git
-   cd gruppo-bf-sostenibilita
-   ```
-
-2. **Apri il file HTML:**
-   - Doppio click su `gruppo-bf-sostenibilita.html`
-   - Oppure apri con il browser 
-
-3. **Nessun server necessario:**
-   - Il progetto è completamente statico
-   - Non richiede dipendenze o installazioni
-
-### Deploy su GitHub Pages
-
-1. **Accedi al sito:**
-   [- il sito e' disponibile a:
-   - `https://[tuo-username].github.io/gruppo-bf-sostenibilita/`](https://emanuelesgro.github.io/gruppo-bf-sostenibilita/Untitled-1.html)
-
-
-##  Struttura File
-
-```
 gruppo-bf-sostenibilita/
-│
-├── gruppo-bf-sostenibilita.html    # Pagina web principale
-├── 9.gruppobfdnf2023.30.04.24v.definitiva.pdf    # Report sostenibilità (da aggiungere)
-├── README.md                       # Questo file
-└── .gitignore                      # File da ignorare (opzionale)
+├── index.html File HTML principale
+├── README.md Questo file
+├── logo.jpg Logo Gruppo BF SpA
+└── 9.gruppobfdnf2023...pdf Dichiarazione Non Finanziaria 2023
 ```
 
-##  Report di Sostenibilità
 
-Il report completo `9.gruppobfdnf2023.30.04.24v.definitiva.pdf` e' caricato nella stessa cartella del file HTML per permettere il download dalla pagina web.
+## Come Utilizzare
 
+### In Locale
 
-##  Caratteristiche Tecniche
+1. Scarica tutti i file nella stessa cartella
+2. Assicurati che il file del logo sia rinominato in `logo.jpg`
+3. Apri il file `index.html` con un browser web
+4. Naviga attraverso le sezioni usando i link nel menu
 
-### Design e Accessibilità
-- **Responsive Design** - Ottimizzato per desktop, tablet e mobile
-- **Accessibilità WCAG** - Supporto screen reader, navigazione keyboard, contrasti adeguati
-- **Temi Naturali** - Palette colori ispirata alla sostenibilità (verdi, toni naturali)
-- **Performance** - Nessuna dipendenza esterna, caricamento rapido
+### Su GitHub Pages
 
-### Tecnologie Utilizzate
-- HTML5 semantico
-- CSS3 con variabili custom (design system)
-- JavaScript vanilla (navigazione smooth scroll, animazioni)
-- Font system nativi (nessun font esterno)
+1. Crea un nuovo repository pubblico su GitHub
+2. Carica tutti i file (index.html, logo.jpg, PDF)
+3. Accedi a Settings del repository
+4. Scorri fino a "Pages" 
+5. Seleziona il ramo "main" come source
+6. Salva le impostazioni
+7. Attendi 2-5 minuti per il deployment
+8. Il sito sarà accessibile a: https://emanuelesgro.github.io/gruppo-bf-sostenibilita/Untitled-1.html
 
-### Compatibilità Browser
--  Chrome/Edge 
--  Firefox 
--  Safari 
--  Mobile browsers 
+## Requisiti
 
-## 🔧 Personalizzazione
+- Browser moderno con supporto HTML5 e CSS3
+- Connessione internet per il caricamento dei font Google
+- Tutti i file nella stessa cartella
 
-### Modificare i Colori
-Nel file HTML, sezione `<style>`, modifica le variabili CSS:
+## Dati e Fonti
 
-```css
-:root {
-    --color-primary: #2d7a3e;        /* Verde principale */
-    --color-primary-light: #4a9d5b;  /* Verde chiaro */
-    --color-primary-dark: #1e5a2d;   /* Verde scuro */
-    /* ... */
-}
-```
+I contenuti sono stati estratti dalla Dichiarazione Non Finanziaria 2023 del Gruppo BF SpA (Aprile 2024). Le informazioni includono:
 
-### Aggiungere Contenuti
-Identifica le sezioni nel codice HTML cercando:
-- `<section class="container section" id="[nome-sezione]">`
-- Aggiungi nuove card duplicando la struttura esistente
-- Mantieni la struttura semantica e le classi CSS
+- Piano Strategico 2023-2027
+- Dati su impianti fotovoltaici e energia rinnovabile
+- Certificazioni ISO (14001 per ambiente, 45001 per sicurezza)
+- Certificazioni di tracciabilità (ISCC EU, IFS, Kosher, GMP+)
+- Iniziative di sostenibilità ambientale e biodiversità
+- Programmi di responsabilità sociale
 
-### Aggiornare il Report
-Sostituisci il file PDF e aggiorna il nome nel link:
-```html
-<a href="NOME_NUOVO_REPORT.pdf" class="download-button" download>
-```
+## Accessibilità
 
-##  Sezioni della Pagina
+La pagina è stata realizzata seguendo principi di accessibilità web:
 
-1. **Header** - Logo, navigazione, menu mobile
-2. **Hero** - Introduzione e call-to-action
-3. **Piano Strategico** - Overview con statistiche chiave
-4. **5 Pilastri** - Card dettagliate per ogni pilastro
-5. **Agroecologia** - Pratiche agricole sostenibili
-6. **Risultati 2023** - Timeline achievements
-7. **Certificazioni** - Grid certificazioni internazionali
-8. **Download Report** - Sezione download PDF
-9. **Footer** - Link e informazioni aziendali
+- Colore adeguato per la leggibilità
+- Struttura semantica corretta con heading gerarchici
+- Navigazione da tastiera funzionante
+- Dimensioni di testo leggibili
 
-##  Funzionalità Interactive
+## Troubleshooting
 
-- **Smooth Scroll** - Navigazione fluida tra sezioni
-- **Menu Mobile** - Responsive navigation per smartphone
-- **Active Section Highlight** - Evidenziazione sezione corrente
-- **Card Animations** - Fade-in animazioni on scroll
-- **Hover Effects** - Feedback visivi su pulsanti e card
+### Il logo non appare
 
-##  Troubleshooting
+Verifica che:
+- Il file immagine sia nella stessa cartella di index.html
+- Il file sia rinominato esattamente in `logo.jpg`
+- L'estensione sia corretta (.jpg)
 
 ### Il PDF non si scarica
-- Verifica che il file PDF sia nella stessa cartella dell'HTML
-- Controlla che il nome del file nel codice corrisponda esattamente
-- Su GitHub Pages, attendi alcuni minuti dopo il push per la propagazione
+
+Assicurati che:
+- Il file PDF sia nella stessa cartella di index.html
+- Il nome del file nel codice HTML corrisponda esattamente al file presente
 
 ### Il sito non appare su GitHub Pages
-- Verifica che il repository sia Public
-- Controlla che GitHub Pages sia attivato nelle Settings
-- Attendi 2-5 minuti per il primo deploy
-- Verifica l'URL: `https://[username].github.io/[repo-name]/`
 
-### Stili CSS non applicati
-- Controlla che il browser supporti CSS custom properties (variabili)
-- Apri la console sviluppatore (F12) per vedere errori
-- Prova un hard refresh (Ctrl+F5 o Cmd+Shift+R)
+- Verifica che il repository sia impostato come Public
+- Controlla che Pages sia abilitato nelle Settings
+- Attendi almeno 5 minuti dopo il push
+- Prova un hard refresh del browser (Ctrl+F5 su Windows, Cmd+Shift+R su Mac)
 
-##  Risorse Utili
+## Personalizzazione
 
-- [GitHub Pages Documentation](https://docs.github.com/en/pages)
-- [Markdown Guide](https://www.markdownguide.org/)
-- [HTML Semantico](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html)
-- [WCAG Accessibilità](https://www.w3.org/WAI/WCAG21/quickref/)
+Per modificare il sito:
 
-##  Autore
-Carmelo Emanuele Sgro'
-Progetto sviluppato per Project Work universitario - Analisi Sostenibilità Aziendale
+- **Cambiare colori**: Modifica i codici colore nel tag `<style>` (#2d7a3e per il verde primario)
+- **Aggiungere contenuti**: Modifica il testo all'interno dei tag HTML
+- **Cambiare il logo**: Sostituisci il file logo.jpg con una nuova immagine
 
-**Azienda Analizzata:** Gruppo BF SpA  
-**Settore:** Primario - Agricoltura e Agroindustria  
-**Report di Riferimento:** Dichiarazione Non Finanziaria 2023
+## Note di Sviluppo
 
-## 📞 Contatti Gruppo BF
+- Il sito utilizza un file HTML unico con CSS e JavaScript incorporati per semplicità di deployment su GitHub Pages
+- La navigazione utilizza smooth scroll per un'esperienza più fluida
+- Il layout utilizza CSS Grid e Flexbox per la responsività
+- Nessun framework esterno è stato utilizzato
 
-- **Sito Web:** https://www.bfspa.it
-- **Investor Relations:** https://www.bfspa.it/investor-relations
-- **BF Agricola:** https://www.bfagricola.it
-- **CAI:** https://www.consorziagrariditalia.it
+## Autore
 
-## 📝 Licenza
+Progetto universitario sviluppato per la presentazione della sostenibilità del Gruppo BF SpA.
 
-Questo progetto è stato creato per scopi educativi. 
+## Licenza
 
-**Nota:** I contenuti relativi al Gruppo BF SpA sono di proprietà dell'azienda. Il report di sostenibilità e i dati presentati sono estratti da documenti pubblici ufficiali.
+Questo progetto utilizza contenuti pubblici dalla Dichiarazione Non Finanziaria ufficiale del Gruppo BF SpA. I dati aziendali rimangono di proprietà dell'azienda.
 
 ---
 
-**Data Creazione:** Novembre 2024  
-**Ultimo Aggiornamento:** Novembre 2024  
-**Versione:** 1.0
+**Ultimo aggiornamento**: Gennaio 2026
