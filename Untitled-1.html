@@ -7,6 +7,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+        /* Reset e stili di base */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body { 
@@ -22,6 +23,7 @@
             padding: 0 20px; 
         }
 
+        /* Header - Navigation */
         header { 
             background: #fff; 
             padding: 20px 0; 
@@ -60,6 +62,7 @@
             display: none; 
         }
 
+        /* Hero Section */
         .hero { 
             background: linear-gradient(135deg, #2d7a3e 0%, #4a9c5e 100%); 
             color: white; 
@@ -79,6 +82,7 @@
             opacity: 0.95;
         }
         
+        /* Statistiche principali */
         .hero-stats { 
             display: flex; 
             justify-content: center; 
@@ -101,6 +105,7 @@
             opacity: 0.8;
         }
 
+        /* Sezioni generali */
         section { 
             padding: 60px 0; 
         }
@@ -112,6 +117,7 @@
             color: #2d7a3e;
         }
 
+        /* Grid per le card dei pilastri */
         .grid { 
             display: grid; 
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
@@ -141,6 +147,7 @@
             font-size: 1.3rem;
         }
 
+        /* Timeline dei risultati */
         .timeline { 
             max-width: 700px; 
             margin: 0 auto; 
@@ -160,6 +167,7 @@
             margin-bottom: 8px; 
         }
 
+        /* Certificazioni grid */
         .cert-grid { 
             display: grid; 
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
@@ -176,6 +184,7 @@
             color: #2d7a3e; 
         }
 
+        /* Sezione download */
         .download { 
             background: #e8f3eb; 
             text-align: center; 
@@ -198,6 +207,7 @@
             background: #1f5529;
         }
 
+        /* Footer */
         footer { 
             background: #1a3c26; 
             color: white; 
@@ -216,6 +226,7 @@
             margin: 0 15px;
         }
 
+        /* Responsive - Design mobile */
         @media (max-width: 768px) {
             nav ul { 
                 display: none; 
@@ -239,11 +250,12 @@
     </style>
 </head>
 <body>
+    <!-- Header con navigazione -->
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="bfspafullposotivocmyk1024x5441_large.jpg" alt="Logo BF SpA">
+                    <img src="logo.jpg" alt="Logo BF SpA">
                 </div>
                 <nav>
                     <ul>
@@ -257,6 +269,7 @@
         </div>
     </header>
 
+    <!-- Sezione hero con dati principali -->
     <section class="hero">
         <div class="container">
             <h1>Sostenibilità Gruppo BF SpA</h1>
@@ -278,30 +291,36 @@
         </div>
     </section>
 
+    <!-- I 5 pilastri strategici in formato card -->
     <section id="pilastri">
         <div class="container">
             <h2>I 5 Pilastri Strategici</h2>
             <div class="grid">
+                <!-- Card 1: Sostenibilità Ambientale -->
                 <div class="card">
                     <div class="card-icon">🌱</div>
                     <h3>Sostenibilità Ambientale</h3>
                     <p>ISO 14001. 4.237 kWp fotovoltaico. Lavorazioni minime su 50% superfici. Irrigazione di precisione.</p>
                 </div>
+                <!-- Card 2: Biodiversità -->
                 <div class="card">
                     <div class="card-icon">🐝</div>
                     <h3>Biodiversità</h3>
                     <p>1.220 ettari. 10% terreni dedicati. Piante mellifere e cover crops per l'agroecologia.</p>
                 </div>
+                <!-- Card 3: Tracciabilità -->
                 <div class="card">
                     <div class="card-icon">🔗</div>
                     <h3>Tracciabilità</h3>
                     <p>Codice condotta fornitori (74%). ISCC EU, IFS, Kosher. Filiera italiana 100% tracciata.</p>
                 </div>
+                <!-- Card 4: Capitale Umano -->
                 <div class="card">
                     <div class="card-icon">👥</div>
                     <h3>Capitale Umano</h3>
                     <p>ISO 45001. Whistleblowing attivo. Formazione continua. Sicurezza sul lavoro prioritaria.</p>
                 </div>
+                <!-- Card 5: Comunità -->
                 <div class="card">
                     <div class="card-icon">🌍</div>
                     <h3>Comunità</h3>
@@ -311,26 +330,28 @@
         </div>
     </section>
 
+    <!-- Timeline con i risultati 2023 -->
     <section id="risultati">
         <div class="container">
             <h2>Risultati Chiave 2023</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <h4>⚡ Energia Rinnovabile</h4>
+                    <h4>Energia Rinnovabile</h4>
                     <p>4.237 kWp di fotovoltaico installato. Aumento autoconsumo del 19,9%.</p>
                 </div>
                 <div class="timeline-item">
-                    <h4>✓ Certificazioni</h4>
+                    <h4>Certificazioni</h4>
                     <p>ISO 14001 confermata per BF Agricola. Piano di estensione a 5 società entro 2027.</p>
                 </div>
                 <div class="timeline-item">
-                    <h4>🌿 Agroecologia</h4>
+                    <h4>Agroecologia</h4>
                     <p>Transizione verso pratiche sostenibili. Riduzione dell'impatto ambientale.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Elenco certificazioni principali -->
     <section id="certificazioni">
         <div class="container">
             <h2>Certificazioni Principali</h2>
@@ -355,30 +376,32 @@
         </div>
     </section>
 
+    <!-- Sezione download PDF -->
     <section id="download" class="download">
         <div class="container">
             <h2>Dichiarazione Non Finanziaria 2023</h2>
             <p>Scarica il report completo con tutti i dati del Piano Strategico 2023-2027</p>
             <a href="9.gruppobfdnf2023.30.04.24v.definitiva.pdf" class="download-button" download>
-                📥 Scarica PDF (2.5 MB)
+                Scarica PDF (2.5 MB)
             </a>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <img src="bfspafullposotivocmyk1024x5441_large.jpg" alt="BF SpA">
+            <img src="logo.jpg" alt="BF SpA">
             <p>
                 <a href="https://www.bfspa.it/" target="_blank">Sito ufficiale</a>
                 |
                 <a href="#pilastri">Torna su</a>
             </p>
-            <p style="margin-top: 20px; font-size: 0.9rem;">Progetto Universitario 2026 • Dati da Dichiarazione Non Finanziaria 2023 Gruppo BF SpA</p>
+            <p style="margin-top: 20px; font-size: 0.9rem;">Progetto Universitario 2026 - Dati da Dichiarazione Non Finanziaria 2023 Gruppo BF SpA</p>
         </div>
     </footer>
 
     <script>
-        // Smooth scroll per i link
+        // Scroll fluido verso le sezioni quando si cliccano i link di navigazione
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -391,3 +414,8 @@
     </script>
 </body>
 </html>
+
+    </script>
+</body>
+</html>
+
