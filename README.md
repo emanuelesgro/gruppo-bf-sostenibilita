@@ -51,7 +51,7 @@ La pagina web fornisce:
 
 1. **Accedi al sito:**
    [- il sito e' disponibile a:
-   - `https://[tuo-username].github.io/gruppo-bf-sostenibilita/`](https://emanuelesgro.github.io/gruppo-bf-sostenibilita/Untiled-1.html)
+   - `https://[tuo-username].github.io/gruppo-bf-sostenibilita/`](https://emanuelesgro.github.io/gruppo-bf-sostenibilita/Untitled-1.html)
 
 
 ##  Struttura File
