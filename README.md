@@ -32,10 +32,15 @@ La pagina web è organizzata in sezioni che coprono i seguenti argomenti:
 ## Struttura File
 
 gruppo-bf-sostenibilita/
+
 ├── index.html File HTML principale
+
 ├── README.md Questo file
+
 ├── logo.jpg Logo Gruppo BF SpA
+
 └── 9.gruppobfdnf2023...pdf Dichiarazione Non Finanziaria 2023
+
 ```
 
 
