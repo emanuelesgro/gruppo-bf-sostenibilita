@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sostenibilità Gruppo BF SpA</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            background: #f9f9f9;
+        }
+        
+        .container { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+        }
+
+        header { 
+            background: #fff; 
+            padding: 20px 0; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+        
+        .header-content { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        
+        .logo img { 
+            height: 45px; 
+        }
+        
+        nav ul { 
+            display: flex; 
+            list-style: none; 
+            gap: 30px; 
+        }
+        
+        nav a { 
+            color: #333; 
+            text-decoration: none; 
+            font-weight: 500;
+        }
+        
+        nav a:hover { 
+            color: #2d7a3e; 
+        }
+        
+        .menu-toggle { 
+            display: none; 
+        }
+
+        .hero { 
+            background: linear-gradient(135deg, #2d7a3e 0%, #4a9c5e 100%); 
+            color: white; 
+            padding: 80px 0; 
+            text-align: center; 
+        }
+        
+        .hero h1 { 
+            font-size: 3rem; 
+            font-weight: 700; 
+            margin-bottom: 20px; 
+        }
+        
+        .hero p { 
+            font-size: 1.2rem; 
+            margin-bottom: 40px; 
+            opacity: 0.95;
+        }
+        
+        .hero-stats { 
+            display: flex; 
+            justify-content: center; 
+            gap: 40px; 
+            flex-wrap: wrap; 
+        }
+        
+        .stat { 
+            text-align: center; 
+        }
+        
+        .stat-number { 
+            font-size: 2.5rem; 
+            font-weight: 700; 
+            display: block; 
+        }
+        
+        .stat small { 
+            font-size: 0.9rem; 
+            opacity: 0.8;
+        }
+
+        section { 
+            padding: 60px 0; 
+        }
+        
+        h2 { 
+            font-size: 2.2rem; 
+            text-align: center; 
+            margin-bottom: 40px; 
+            color: #2d7a3e;
+        }
+
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 25px; 
+        }
+        
+        .card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid #2d7a3e;
+        }
+        
+        .card:hover {
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .card-icon { 
+            font-size: 3rem; 
+            margin-bottom: 15px; 
+        }
+        
+        .card h3 { 
+            color: #2d7a3e; 
+            margin-bottom: 10px; 
+            font-size: 1.3rem;
+        }
+
+        .timeline { 
+            max-width: 700px; 
+            margin: 0 auto; 
+        }
+        
+        .timeline-item { 
+            background: white; 
+            padding: 30px; 
+            margin-bottom: 25px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            border-left: 4px solid #2d7a3e;
+        }
+        
+        .timeline-item h4 { 
+            color: #2d7a3e; 
+            margin-bottom: 8px; 
+        }
+
+        .cert-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 20px; 
+            text-align: center;
+        }
+        
+        .cert-item { 
+            padding: 20px; 
+        }
+        
+        .cert-item p { 
+            font-weight: 600; 
+            color: #2d7a3e; 
+        }
+
+        .download { 
+            background: #e8f3eb; 
+            text-align: center; 
+            padding: 60px 0;
+        }
+        
+        .download-button { 
+            display: inline-block; 
+            background: #2d7a3e; 
+            color: white; 
+            padding: 15px 40px; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+        
+        .download-button:hover { 
+            background: #1f5529;
+        }
+
+        footer { 
+            background: #1a3c26; 
+            color: white; 
+            padding: 40px 0; 
+            text-align: center; 
+        }
+        
+        footer img { 
+            height: 35px; 
+            margin-bottom: 15px;
+        }
+        
+        footer a { 
+            color: #a8d5b8; 
+            text-decoration: none; 
+            margin: 0 15px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul { 
+                display: none; 
+            }
+            
+            .menu-toggle { 
+                display: block; 
+                background: none; 
+                border: none; 
+                cursor: pointer;
+            }
+            
+            .hero h1 { 
+                font-size: 2rem; 
+            }
+            
+            .hero-stats { 
+                gap: 20px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="bfspafullposotivocmyk1024x5441_large.jpg" alt="Logo BF SpA">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#pilastri">Pilastri</a></li>
+                        <li><a href="#risultati">Risultati</a></li>
+                        <li><a href="#certificazioni">Certificazioni</a></li>
+                        <li><a href="#download">Report</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Sostenibilità Gruppo BF SpA</h1>
+            <p>Piano Strategico 2023-2027 per un'agricoltura responsabile</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">4.237</span>
+                    <small>kWp Fotovoltaico</small>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1.220</span>
+                    <small>ettari coltivati</small>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">30+</span>
+                    <small>Certificazioni</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pilastri">
+        <div class="container">
+            <h2>I 5 Pilastri Strategici</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Sostenibilità Ambientale</h3>
+                    <p>ISO 14001. 4.237 kWp fotovoltaico. Lavorazioni minime su 50% superfici. Irrigazione di precisione.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🐝</div>
+                    <h3>Biodiversità</h3>
+                    <p>1.220 ettari. 10% terreni dedicati. Piante mellifere e cover crops per l'agroecologia.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔗</div>
+                    <h3>Tracciabilità</h3>
+                    <p>Codice condotta fornitori (74%). ISCC EU, IFS, Kosher. Filiera italiana 100% tracciata.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👥</div>
+                    <h3>Capitale Umano</h3>
+                    <p>ISO 45001. Whistleblowing attivo. Formazione continua. Sicurezza sul lavoro prioritaria.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Comunità</h3>
+                    <p>Progetti a Ferrara e con le scuole. Valorizzazione del territorio e impegno sociale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="risultati">
+        <div class="container">
+            <h2>Risultati Chiave 2023</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>⚡ Energia Rinnovabile</h4>
+                    <p>4.237 kWp di fotovoltaico installato. Aumento autoconsumo del 19,9%.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>✓ Certificazioni</h4>
+                    <p>ISO 14001 confermata per BF Agricola. Piano di estensione a 5 società entro 2027.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>🌿 Agroecologia</h4>
+                    <p>Transizione verso pratiche sostenibili. Riduzione dell'impatto ambientale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificazioni">
+        <div class="container">
+            <h2>Certificazioni Principali</h2>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <div style="font-size: 3rem;">📋</div>
+                    <p>ISO 14001</p>
+                </div>
+                <div class="cert-item">
+                    <div style="font-size: 3rem;">🛡️</div>
+                    <p>ISO 45001</p>
+                </div>
+                <div class="cert-item">
+                    <div style="font-size: 3rem;">✅</div>
+                    <p>ISCC EU</p>
+                </div>
+                <div class="cert-item">
+                    <div style="font-size: 3rem;">🏆</div>
+                    <p>IFS, GMP+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <div class="container">
+            <h2>Dichiarazione Non Finanziaria 2023</h2>
+            <p>Scarica il report completo con tutti i dati del Piano Strategico 2023-2027</p>
+            <a href="9.gruppobfdnf2023.30.04.24v.definitiva.pdf" class="download-button" download>
+                📥 Scarica PDF (2.5 MB)
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="bfspafullposotivocmyk1024x5441_large.jpg" alt="BF SpA">
+            <p>
+                <a href="https://www.bfspa.it/" target="_blank">Sito ufficiale</a>
+                |
+                <a href="#pilastri">Torna su</a>
+            </p>
+            <p style="margin-top: 20px; font-size: 0.9rem;">Progetto Universitario 2026 • Dati da Dichiarazione Non Finanziaria 2023 Gruppo BF SpA</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll per i link
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
